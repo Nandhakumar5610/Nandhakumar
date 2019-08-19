@@ -1,0 +1,101 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<title> Form Creation</title>
+
+		<script >
+			function beep() 
+			{
+				alert("your requesting page is loading ....Plzz wait....")
+			}
+			function call()
+			{
+				var Fname = document.getElementById("n1");
+				var Lname = document.getElementById("n2");
+				var Mnum = document.getElementById("n3");
+				var dob = document.getElementById("n4");
+				var male = document.getElementById("n5");
+				var female = document.getElementById("n6");
+				
+				
+				
+				if( Fname.value == "")
+				{
+					alert("enter ur 1st name");
+				}
+				
+				else if  (Fname.value.length <=5)
+				{
+					alert("ur name must be 5 characters");
+				}
+				else if( Lname.value == "")
+				{
+					alert("enter last ur name");
+				}
+				else if  (Lname.value.length <=5)
+				{
+					alert("ur name must be 5 characters");
+				}
+				else if( Mnum.value == "")
+				{
+					alert("enter mobile num");
+				}
+				else if  (Mnum.value.length !=10)
+				{
+					alert("ur name must be 10 characters");
+				}
+				else if(Mnum.value.charAt(0) != '9')
+				{
+					alert("Mobile Number should start with 9");
+				}
+				else if( dob.value == "")
+				{
+					alert("enter ur date of birth");
+				}
+				var join =Fname.value+Lname.value;
+				document.getElementById("run").value = join;
+			}	
+			function jr()
+			{
+				document.getElementById("img").style.width="100px";
+				document.getElementById("img").style.height="100px";
+			}
+			function rj()
+			{
+				document.getElementById("img").style.width="50px";
+				document.getElementById("img").style.height="50px";
+			}
+
+			function place()
+			{
+				var ground = document.getElementById("play")
+				if(ground.value.length==10)
+				{
+					alert("u reached the maxinum characters");
+					ground.value=ground.value.substring(0,10);
+				}
+			}
+		</script>
+	</head>
+	<body onload="beep()">
+		<center><header><h1>Application Form</h1></header></center>
+		<div style="margin-left: 650px; margin-top:70px;">
+			<form>
+				<table cellpadding="20px;" cellspacing="20px;">
+					<ul>
+						<tr>				
+							<tr><td> FIRST NAME:</td> <td> <input type="text" id="n1"  placeholder="Enter1 st name"> </td> </tr>
+							<p id="run"></p>
+							<tr><td>LAST NAME:</td> <td> <input type="text"  id="n2" placeholder="Enter last name"></td> </tr>
+							<tr><td>MOBILE NUMBER:</td> <td> <input type="text" id="n3" placeholder="Enter mobile number "></td></tr>
+							<tr><td>DOB:</td> <td> <input type="date"  min="1990-01-01" max="2000-01-01" id="n4" ></td></tr>
+							<tr><td>Password:</td> <td><input type="password" placeholder="Enter ur password" onkeyup="place()" id="play"></td></tr>
+							<tr><td>GENDER:</td> <td> <input type="radio" value="male" name="GENDER" id="n5">Male
+								<input type="radio"  value="female" name="GENDER" id="n6">Female</td></tr>
+								<tr><td><input type="button"  value="submit" onclick="call()"></td></tr>
+								<tr><td><button>clear</button></td></tr>
+							</ul>	         
+						</table>
+					</form>
+				</body>
+			</html>

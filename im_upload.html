@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function pink()
+		{
+			console.log(document.getElementById("built").files[0].size);
+			console.log(document.getElementById("built").files[0].name);
+
+			var size = parseInt(document.getElementById("built").files[0].size);
+			var xx =document.getElementById("built").files[0].name;
+			var ul = xx.substring(xx.lastIndexOf('.')+1, xx.length);
+			if (size > 1000000)
+			{
+				alert("you have crossed ur limit");
+			}
+			else
+			{
+				alert("less than 1 mp");
+			}
+
+			if( ul != "png" )
+			{
+				alert("png only allowed");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="file" name="upload" id="built">
+	<input type="button" value="press"  onclick="pink()">
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<script>
+		function validata()
+		    {
+			var tempUsername = document.getElementById("Uname");
+			var temppassword = document.getElementById("password");
+			if (tempUsername.value == "")
+			{
+				alert("Enter Username");
+			}
+			if (temppassword.value == "")
+			{
+				alert("Enter password");
+			}
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="Uname" name="Username" placeholder="Username">
+<input type="text" id="password" name="password" placeholder="password">
+<input type="button" value="Log in" onclick="validate()">
+</body>
+</html>

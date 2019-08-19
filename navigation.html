@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation </title>
+
+<script>
+	function make()
+	{
+      document.getElementById('img').style.left = parseInt(document.getElementById('img').style.left)+ 20+ "px";
+
+	}
+	function mak()
+	{
+      document.getElementById('img').style.left = parseInt(document.getElementById('img').style.left)-20+"px";
+
+	}
+	function ma()
+	{
+      document.getElementById('img').style.top = parseInt(document.getElementById('img').style.top)+20+"px";
+
+	}
+	function m()
+	{
+      document.getElementById('img').style.top = parseInt(document.getElementById('img').style.top)-20+"px";
+
+	}
+</script>
+</head>
+<body>
+		<center><img src="1.jpg" width="300px"; id="img" height="300px"; style="position:relative; top:0px; left:0px"></center>
+		<div style="margin-top: 300px">
+		<input type="button" value="left"  onclick="make()">
+		<input type="button" value="right"  onclick="mak()">
+		<input type="button" value="top"  onclick="ma()">
+		<input type="button" value="bottom"  onclick="m()">
+		</div>
+
+</body>
+</html>

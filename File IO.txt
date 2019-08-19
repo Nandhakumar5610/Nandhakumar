@@ -1,0 +1,128 @@
+						File IO
+						********
+
+			File
+		*******************
+
+          File f = new File("sample.txt");
+
+important methods:
+----------------
+1. createnewfile();
+2. exists();
+3. mkdir();
+4. list();
+5. length();
+6. isFile();
+7. isDirectoy();
+8. delete();
+
+		
+Constructors
+------------
+	1. File f = new File(String);
+	2. File f = new File(String subDirName, String FileName);
+	3. File f = new File(File f, String fileName)
+	
+
+			File Writer
+		**************************
+Constructors
+------------
+		Override:
+	----------------------
+
+	1. FileWriter fw = new FileWriter(String fileName);
+
+	2. FileWriter fw = new FileWriter(File f);
+
+
+		Append:
+	----------------------
+
+	1. FileWriter fw = new FileWriter(String filname, boolean append);
+
+	2. FileWriter fw = new FileWriter(File f, boolean append);
+
+methods:
+--------
+1.write(int ch);
+2.write(char[] ch);
+3.write(String s);
+4.flush();
+5.close();
+
+			File Reader
+		***************************
+
+Construcors
+-----------
+	1. FileReader fr = new FileReader(String fileName);				
+	2. FileReader fr = new FileReader(File F);
+
+methods:
+-------
+
+1.int read();
+2.read(char[] ch);
+3.close();
+
+			BufferedWriter
+		*****************************
+Constructors
+------------
+	1. BufferedWriter bw = new BufferedWriter(Writer wr); 
+	2. BufferedWriter bw = new BufferedWriter(Writer wr, int buffersize); 
+
+methods:
+--------
+1.write(int ch);
+2.write(char[] ch);
+3.write(String s);
+4.flush();
+5.close();
+6.newLine();
+
+
+			BufferedReader
+		*****************************
+Constructors
+-------------
+	1. BufferedReader br = new BufferedReader(Reader r); 
+	2. BufferedReader br = new BufferedReader(Reader rd, int buffersize);
+
+
+methods:
+-------
+
+1.int read();
+2.read(char[] ch);
+3.close();
+4.readLine();
+
+
+
+      			  PrintWriter
+		*******************************
+Constructors
+-------------
+	1. PrintWriter pw = new PrintWriter(String file);
+	2. PrintWriter pw = new PrintWriter(File f);
+	3. PrintWriter pw = new PrintWriter (Writer wr);
+
+methods:
+-------
+print(int a);
+print(float f);
+print(String s);
+
+println(int a);
+println(float f);
+println(String s);
+
+1.write(int ch);
+2.write(char[] ch);
+3.write(String s);
+4.flush();
+5.close();
+

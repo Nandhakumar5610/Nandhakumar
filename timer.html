@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+<script>
+
+var myVar;
+
+function start() {
+    myVar = setInterval(function(){ myTimer() }, 1000);
+}
+
+function myTimer(){
+	document.getElementById("timer").innerHTML = parseInt(document.getElementById("timer").innerHTML)+1;
+}
+
+function myStopFunction() {
+    clearInterval(myVar);
+	document.getElementById("timer").innerHTML = 0;
+}
+
+</script>
+
+</head>
+
+
+<body>
+	<div id="timer">0</div>
+	<input type="button" value="start" onclick="start()" >
+	<input type="button" value="stop" onclick="myStopFunction()" >
+</body>
+
+</html>

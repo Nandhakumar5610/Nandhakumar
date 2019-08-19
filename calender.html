@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		calender
+	</title>
+	<script>
+		function call()
+		{
+			var dateObject = new Date();
+			document.getElementById("div1").innerHTML=dateObject;
+		}
+	</script>
+	<style >
+	.hello1 li
+	{
+		display: inline-block;
+		width: 13.6%;
+	}
+	.hello2 li
+	{
+		display: inline-block;
+		width: 13.6%;
+		margin-bottom: 5px;
+		font-size:17px;
+
+	}
+	.hello2
+	{
+		background-color:lightblue;
+	}
+	.hello1
+	{
+		background-color:gray;
+		height: 20px;
+	}
+	.div2 ul li 
+	{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    }
+	.bd
+	{
+	  background-color:red; 
+	}
+
+</style>
+</head>
+<body onload="call()">
+
+	<div id="div1">
+	</div> 
+		
+	<div class="div2">
+	    <ul>                            
+    <li>
+      february<br>
+       2k18
+    </li>
+  </ul>
+</div>
+	<div>
+		<ul class="hello1">
+			<li>Mo</li>
+			<li>Tu</li>
+			<li>We</li>
+			<li>Th</li>
+			<li>Fr</li>
+			<li>Sa</li>
+			<li>Su</li>
+		</ul>
+	</div>
+	<div>
+		<ul class="hello2">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li> <a href="dhinakar.php" target="_banck" class="bd">11</li></a>
+			<li>12</li>
+			<li>13</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>23</li>
+			<li>24</li>
+			<li>25</li>
+			<li>26</li>
+			<li>27</li>
+			<li>28</li>
+			<li>29</li>            
+			<li>30</li>
+			<li>31</li>
+		</ul>
+	</div>
+</body>
+</html>

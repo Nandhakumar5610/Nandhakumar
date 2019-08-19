@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+<script>
+
+function validate(){
+	var userName = document.getElementById("userName");
+	var pwd = document.getElementById("pwd");
+	var mNumber = document.getElementById("mNumber");
+	
+	if(userName.value == ""){
+		alert("Enter user name");
+	}
+	else if(userName.value.length < 5){
+		alert("Username must be equal or greater than 5 characters");
+	}
+	else if(pwd.value == ""){
+		alert("Enter password");
+	}
+	else if(pwd.value.length < 5){
+		alert("Password must be equal or greater than 5 characters");
+	}
+	else if(mNumber.value == ""){
+		alert("Enter Mobile Number");
+	}
+	else if(mNumber.value.length != 10){
+		alert("Mobile Number must be 10 characters");
+	}
+	else if(mNumber.value.charAt(0) != '9'){
+		alert("Mobile Number should start with 9");
+	}
+}
+
+</script>
+
+</head>
+
+
+<body>
+	
+	<input type="text" id="userName" name="userName" placeHolder="User Name" />
+	<br>
+	<input type="password" id="pwd" name="pwd" placeHolder="Password" />
+	<br>
+	<input type="text" id="mNumber" name="mNumber" placeHolder="Mobile Number" />
+	<br>
+	<input type="button" value="submit" onclick="validate()" >
+
+</body>
+
+</html>

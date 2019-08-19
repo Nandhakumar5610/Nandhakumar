@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script >
+		function myfunction()
+		{
+		var a = document.getElementById("full").value;
+		document.getElementById("dhina").innerHTML = "you have selected:" + a;
+	}
+	</script>
+</head>
+<body>
+	<select id="full" onchange="myfunction()">
+		<option value="sky">sky
+		<option value="hell">hell
+		<option value="khan">khan
+	</select>
+	<p id="dhina"></p>
+</body>
+</html>
+
+

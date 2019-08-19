@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+function w() 
+{
+	var text =document.getElementById("textbox");
+	var upr =text.value.toUpperCase();
+	document.getElementById("para").innerHTML=upr;
+}
+</script>
+		
+</head>
+<body>
+<input type="text" id="textbox" >
+<input type="button" value="submit" onclick="w()">
+<h1 id="para"></h1>
+</body>
+</html>
